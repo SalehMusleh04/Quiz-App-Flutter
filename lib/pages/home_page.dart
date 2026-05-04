@@ -78,8 +78,7 @@ class _HomePageState extends State<HomePage> {
                           isButtonAvailable: answerChosen != -1,
                           changeQuestion: () {
                             if ((questionNumber < questions.length) &&
-                                answerChosen != -1 &&
-                                questionNumber != questions.length) {
+                                answerChosen != -1) {
                               setState(() {
                                 questionIndex++;
                                 answerChosen = -1;
