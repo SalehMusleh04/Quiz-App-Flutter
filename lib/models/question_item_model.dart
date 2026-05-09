@@ -9,50 +9,48 @@ class QuestionItemModel {
 
 List<QuestionItemModel> questions = [
   QuestionItemModel(
-    title:
-        "Which is the second longest surah in the Qur'an in terms of the number of verses?",
+    title: "Which programming language is used to build Flutter apps?",
     answers: [
-      AnswerItemModel(answer: "Aal-Imran"),
-      AnswerItemModel(answer: "Ash-Shu'ara", isTrue: true),
-      AnswerItemModel(answer: "An-Nahl"),
-      AnswerItemModel(answer: "An-Nisa"),
+      AnswerItemModel(answer: "Java"),
+      AnswerItemModel(answer: "Dart", isTrue: true),
+      AnswerItemModel(answer: "Python"),
+      AnswerItemModel(answer: "C++"),
     ],
   ),
   QuestionItemModel(
-    title:
-        "Which of the following surahs begins with disjointed letters (Muqatta'at) and contains a verse of prostration (Sajdah)?",
+    title: "Which is the largest country in the world by land area?",
     answers: [
-      AnswerItemModel(answer: "Al-Furqan"),
-      AnswerItemModel(answer: "Al-Ankabut"),
-      AnswerItemModel(answer: "An-Najm"),
-      AnswerItemModel(answer: "An-Naml", isTrue: true),
+      AnswerItemModel(answer: "China"),
+      AnswerItemModel(answer: "USA"),
+      AnswerItemModel(answer: "Russia", isTrue: true),
+      AnswerItemModel(answer: "Canada"),
     ],
   ),
   QuestionItemModel(
-    title: "Who killed the Commander of the Faithful, Omar ibn al-Khattab ?",
+    title: "Which country has won the most FIFA World Cups?",
     answers: [
-      AnswerItemModel(answer: "Abu Lu'lu'ah al-Majusi", isTrue: true),
-      AnswerItemModel(answer: "Abdullah ibn Saba"),
-      AnswerItemModel(answer: "Ubayy ibn Khalaf"),
-      AnswerItemModel(answer: "Al-Walid ibn al-Mughirah"),
+      AnswerItemModel(answer: "Germany"),
+      AnswerItemModel(answer: "Argentina"),
+      AnswerItemModel(answer: "Brazil", isTrue: true),
+      AnswerItemModel(answer: "Italy"),
     ],
   ),
   QuestionItemModel(
-    title: 'How many times is the name "Muhammad" mentioned in the Qur\'an?',
+    title: "What is the square root of 144?",
     answers: [
-      AnswerItemModel(answer: "8"),
-      AnswerItemModel(answer: "6"),
-      AnswerItemModel(answer: "4", isTrue: true),
-      AnswerItemModel(answer: "2"),
+      AnswerItemModel(answer: "12", isTrue: true),
+      AnswerItemModel(answer: "10"),
+      AnswerItemModel(answer: "11"),
+      AnswerItemModel(answer: "14"),
     ],
   ),
   QuestionItemModel(
-    title: "Which prophet is mentioned the most in the Qur'an?",
+    title: "What is the 'Brain' of the computer called?",
     answers: [
-      AnswerItemModel(answer: "Eissa"),
-      AnswerItemModel(answer: "Mousa", isTrue: true),
-      AnswerItemModel(answer: "Ibrahim"),
-      AnswerItemModel(answer: "Adam"),
+      AnswerItemModel(answer: "RAM"),
+      AnswerItemModel(answer: "Hard Drive"),
+      AnswerItemModel(answer: "GPU"),
+      AnswerItemModel(answer: "CPU", isTrue: true),
     ],
   ),
 ];

@@ -14,7 +14,7 @@ class QuestionItem extends StatelessWidget {
         style: GoogleFonts.notoSerif(
           textStyle: Theme.of(
             context,
-          ).textTheme.displaySmall!.copyWith(fontSize: 24),
+          ).textTheme.displaySmall!.copyWith(fontSize: 22),
         ),
       ),
     );

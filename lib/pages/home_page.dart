@@ -4,6 +4,7 @@ import 'package:quiz_app2/widgets/answer_item.dart';
 import 'package:quiz_app2/widgets/custom_button.dart';
 import 'package:quiz_app2/widgets/question_counter.dart';
 import 'package:quiz_app2/widgets/question_item.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -17,10 +18,10 @@ class _HomePageState extends State<HomePage> {
   int answerChosen = -1;
   bool showResult = false;
   int totalScore = 0;
+
   @override
   Widget build(BuildContext context) {
     int questionNumber = questionIndex + 1;
-
     return Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
@@ -61,17 +62,6 @@ class _HomePageState extends State<HomePage> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        // CustomButton(
-                        //   buttonName: 'Previous',
-                        //   isButtonAvailable: questionNumber != 1,
-                        //   changeQuestion: (questionNumber != 1)
-                        //       ? () {
-                        //           setState(() {
-                        //             questionIndex--;
-                        //           });
-                        //         }
-                        //       : null,
-                        // ),
                         const SizedBox(width: 10),
                         CustomButton(
                           buttonName: 'Next',
@@ -105,17 +95,14 @@ class _HomePageState extends State<HomePage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      'CONGRATS 🎉🎉',
-                      style: Theme.of(
-                        context,
-                      ).textTheme.displaySmall!.copyWith(fontSize: 25),
+                      'Your total score is $totalScore / ${(10 * questions.length)}',
+                      style: GoogleFonts.exo2(
+                        textStyle: Theme.of(
+                          context,
+                        ).textTheme.displaySmall!.copyWith(fontSize: 25),
+                      ),
                     ),
-                    Text(
-                      'Your Total Score is $totalScore / ${(10 * questions.length)}',
-                      style: Theme.of(
-                        context,
-                      ).textTheme.displaySmall!.copyWith(fontSize: 25),
-                    ),
+                    const SizedBox(height: 10),
                     ElevatedButton(
                       onPressed: () {
                         setState(() {
